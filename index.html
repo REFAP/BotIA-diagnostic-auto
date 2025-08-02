@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BotIA Diagnostic Auto - Assistant Intelligent</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <span style="font-size: 48px;">🤖</span>
+                    <h1>BotIA Diagnostic Auto</h1>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-value" id="stat-diagnostics">0</span>
+                        <div class="stat-label">Diagnostics DB</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="stat-questions">0</span>
+                        <div class="stat-label">Questions totales</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="stat-unanswered">0</span>
+                        <div class="stat-label">Sans réponse</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="stat-contributions">0</span>
+                        <div class="stat-label">Contributions</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-layout">
+            <div class="chat-section">
+                <div class="chat-header">
+                    <h2>Assistant Diagnostic IA</h2>
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span>Système actif</span>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chat-messages"></div>
+                <div class="chat-input-area">
+                    <div class="input-container">
+                        <input type="text" class="chat-input" id="chat-input" placeholder="Décrivez votre problème automobile..." onkeypress="if(event.key === 'Enter') sendMessage()">
+                        <button class="send-btn" onclick="sendMessage()">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div style="font-size: 12px; color: #666;">💡 Vos questions alimentent l'IA</div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="panel">
+                    <div class="panel-header">
+                        <h3>❓ Questions sans réponse</h3>
+                        <span style="font-size: 14px; color: #666;" id="unanswered-count">0</span>
+                    </div>
+                    <div class="unanswered-list" id="unanswered-list"></div>
+                    <button class="contribute-btn" onclick="showContributeModal()">➕ Contribuer</button>
+                </div>
+                <div class="panel">
+                    <h3>📊 Gestion des données</h3>
+                    <button class="export-btn" onclick="exportUnansweredQuestions()">📥 Exporter JSON</button>
+                    <button class="export-btn" onclick="generateGitHubIssue()">🐙 Issue GitHub</button>
+                </div>
+                <div class="panel">
+                    <h3>⚙️ Configuration</h3>
+                    <div class="form-group">
+                        <label>URL Base GitHub</label>
+                        <input type="text" id="github-url" placeholder="https://raw.githubusercontent.com/..." onchange="saveConfig()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="contribute-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🔧 Contribuer un diagnostic</h2>
+                <button class="close-btn" onclick="hideContributeModal()">✕</button>
+            </div>
+            <form id="contribute-form">
+                <div class="form-group">
+                    <label>Question originale</label>
+                    <input type="text" id="contrib-question" readonly>
+                </div>
+                <div class="form-group">
+                    <label>Titre du diagnostic</label>
+                    <input type="text" id="contrib-title" required>
+                </div>
+                <div class="form-group">
+                    <label>Mots-clés (séparés par virgules)</label>
+                    <input type="text" id="contrib-keywords" required>
+                </div>
+                <div class="form-group">
+                    <label>Niveau d'urgence</label>
+                    <select id="contrib-urgency" required>
+                        <option value="faible">Faible</option>
+                        <option value="moyenne">Moyenne</option>
+                        <option value="elevee">Élevée</option>
+                        <option value="critique">Critique</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Causes possibles (une par ligne)</label>
+                    <textarea id="contrib-causes" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Solutions (une par ligne)</label>
+                    <textarea id="contrib-solutions" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Coût estimé</label>
+                    <input type="text" id="contrib-cost">
+                </div>
+                <div class="form-group">
+                    <label>Votre nom</label>
+                    <input type="text" id="contrib-author">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" onclick="hideContributeModal()">Annuler</button>
+                    <button type="submit" class="btn-primary">Soumettre</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
