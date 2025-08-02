@@ -1,0 +1,134 @@
+{
+  "version": "1.0.0",
+  "lastUpdate": "2025-08-02",
+  "description": "Base de données BotIA des diagnostics automobiles",
+  "diagnostics": {
+    "voyant_moteur": {
+      "keywords": ["voyant moteur", "témoin moteur", "check engine", "voyant orange", "mil"],
+      "titre": "Voyant moteur allumé",
+      "urgence": "moyenne",
+      "causes": [
+        "Capteur d'oxygène défectueux",
+        "Bouchon du réservoir mal serré",
+        "Catalyseur endommagé",
+        "Bobine d'allumage défaillante",
+        "Filtre à air encrassé",
+        "Injecteurs sales"
+      ],
+      "solutions": [
+        "Effectuer un diagnostic OBD2 complet",
+        "Vérifier le bouchon du réservoir",
+        "Consulter un mécanicien rapidement",
+        "Nettoyer le filtre à air",
+        "Faire nettoyer les injecteurs"
+      ],
+      "cout_estime": "30-1500€",
+      "contributeur": "système"
+    },
+    "demarrage_difficile": {
+      "keywords": ["démarrage difficile", "moteur ne démarre pas", "starter", "batterie"],
+      "titre": "Problèmes de démarrage",
+      "urgence": "elevee",
+      "causes": [
+        "Batterie déchargée",
+        "Alternateur défectueux",
+        "Starter en panne",
+        "Bougies usées",
+        "Filtre à carburant encrassé"
+      ],
+      "solutions": [
+        "Vérifier la tension batterie",
+        "Nettoyer les bornes",
+        "Tester l'alternateur",
+        "Remplacer les bougies",
+        "Contrôler le filtre à carburant"
+      ],
+      "cout_estime": "50-800€",
+      "contributeur": "système"
+    },
+    "surchauffe_moteur": {
+      "keywords": ["surchauffe", "température", "vapeur", "radiateur", "liquide refroidissement"],
+      "titre": "Surchauffe du moteur",
+      "urgence": "critique",
+      "causes": [
+        "Liquide de refroidissement bas",
+        "Thermostat défaillant",
+        "Radiateur bouché",
+        "Pompe à eau défectueuse",
+        "Ventilateur en panne"
+      ],
+      "solutions": [
+        "ARRÊTER IMMÉDIATEMENT le moteur",
+        "Laisser refroidir avant inspection",
+        "Vérifier le niveau de liquide",
+        "Contrôler le radiateur",
+        "Consulter EN URGENCE un mécanicien"
+      ],
+      "cout_estime": "100-2000€",
+      "contributeur": "système"
+    },
+    "freins_defaillants": {
+      "keywords": ["freins", "pédale molle", "grincement", "couinement", "plaquettes"],
+      "titre": "Problèmes de freinage",
+      "urgence": "critique",
+      "causes": [
+        "Plaquettes de frein usées",
+        "Disques voilés",
+        "Liquide de frein contaminé",
+        "Étriers grippés",
+        "Maître-cylindre défaillant"
+      ],
+      "solutions": [
+        "ARRÊT IMMÉDIAT si freinage inefficace",
+        "Vérifier l'épaisseur des plaquettes",
+        "Contrôler le liquide de frein",
+        "Faire purger le circuit",
+        "Remplacer les pièces usées"
+      ],
+      "cout_estime": "80-600€",
+      "contributeur": "système"
+    },
+    "direction_dure": {
+      "keywords": ["direction dure", "volant dur", "direction assistée", "pompe direction"],
+      "titre": "Direction assistée défaillante",
+      "urgence": "elevee",
+      "causes": [
+        "Pompe de direction en panne",
+        "Courroie cassée ou détendue",
+        "Niveau d'huile direction bas",
+        "Crémaillère usée",
+        "Capteur défectueux"
+      ],
+      "solutions": [
+        "Vérifier le niveau d'huile",
+        "Contrôler l'état de la courroie",
+        "Écouter les bruits de pompe",
+        "Éviter les manœuvres brusques",
+        "Consulter rapidement un garagiste"
+      ],
+      "cout_estime": "150-800€",
+      "contributeur": "système"
+    },
+    "climatisation_defaut": {
+      "keywords": ["climatisation", "clim", "froid", "chaud", "compresseur", "gaz"],
+      "titre": "Climatisation défaillante",
+      "urgence": "faible",
+      "causes": [
+        "Niveau de fluide frigorigène bas",
+        "Compresseur défaillant",
+        "Condenseur encrassé",
+        "Filtre habitacle sale",
+        "Fuite dans le circuit"
+      ],
+      "solutions": [
+        "Remplacer le filtre habitacle",
+        "Nettoyer le condenseur",
+        "Faire diagnostiquer les fuites",
+        "Recharge du fluide frigorigène",
+        "Contrôler le compresseur"
+      ],
+      "cout_estime": "50-400€",
+      "contributeur": "système"
+    }
+  }
+}
