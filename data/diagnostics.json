@@ -1,10 +1,10 @@
 {
-  "version": "1.0.0",
-  "lastUpdate": "2025-08-02",
-  "description": "Base de données BotIA des diagnostics automobiles",
+  "version": "3.0.0",
+  "lastUpdate": "2025-08-03",
+  "description": "Base de données BotIA complète - Tous diagnostics automobiles",
   "diagnostics": {
     "voyant_moteur": {
-      "keywords": ["voyant moteur", "témoin moteur", "check engine", "voyant orange", "mil"],
+      "keywords": ["voyant moteur", "témoin moteur", "check engine", "voyant orange", "mil", "obd"],
       "titre": "Voyant moteur allumé",
       "urgence": "moyenne",
       "causes": [
@@ -13,20 +13,25 @@
         "Catalyseur endommagé",
         "Bobine d'allumage défaillante",
         "Filtre à air encrassé",
-        "Injecteurs sales"
+        "Injecteurs sales",
+        "Capteur de débit d'air HS",
+        "Sonde lambda défectueuse",
+        "Vanne EGR bloquée"
       ],
       "solutions": [
         "Effectuer un diagnostic OBD2 complet",
         "Vérifier le bouchon du réservoir",
         "Consulter un mécanicien rapidement",
         "Nettoyer le filtre à air",
-        "Faire nettoyer les injecteurs"
+        "Faire nettoyer les injecteurs",
+        "Contrôler les capteurs",
+        "Vérifier les codes défaut"
       ],
       "cout_estime": "30-1500€",
       "contributeur": "système"
     },
     "demarrage_difficile": {
-      "keywords": ["démarrage difficile", "moteur ne démarre pas", "starter", "batterie"],
+      "keywords": ["démarrage difficile", "moteur ne démarre pas", "starter", "batterie", "ne tourne pas"],
       "titre": "Problèmes de démarrage",
       "urgence": "elevee",
       "causes": [
@@ -34,20 +39,25 @@
         "Alternateur défectueux",
         "Starter en panne",
         "Bougies usées",
-        "Filtre à carburant encrassé"
+        "Filtre à carburant encrassé",
+        "Relais défaillant",
+        "Antivol activé",
+        "Pompe à essence HS"
       ],
       "solutions": [
         "Vérifier la tension batterie",
         "Nettoyer les bornes",
         "Tester l'alternateur",
         "Remplacer les bougies",
-        "Contrôler le filtre à carburant"
+        "Contrôler le filtre à carburant",
+        "Vérifier l'antivol",
+        "Tester la pompe à carburant"
       ],
       "cout_estime": "50-800€",
       "contributeur": "système"
     },
     "surchauffe_moteur": {
-      "keywords": ["surchauffe", "température", "vapeur", "radiateur", "liquide refroidissement"],
+      "keywords": ["surchauffe", "température", "vapeur", "radiateur", "liquide refroidissement", "eau"],
       "titre": "Surchauffe du moteur",
       "urgence": "critique",
       "causes": [
@@ -55,20 +65,25 @@
         "Thermostat défaillant",
         "Radiateur bouché",
         "Pompe à eau défectueuse",
-        "Ventilateur en panne"
+        "Ventilateur en panne",
+        "Joint de culasse HS",
+        "Durite percée",
+        "Bouchon radiateur défaillant"
       ],
       "solutions": [
         "ARRÊTER IMMÉDIATEMENT le moteur",
         "Laisser refroidir avant inspection",
         "Vérifier le niveau de liquide",
         "Contrôler le radiateur",
-        "Consulter EN URGENCE un mécanicien"
+        "Consulter EN URGENCE un mécanicien",
+        "Ne pas ouvrir le radiateur chaud",
+        "Vérifier les durites"
       ],
       "cout_estime": "100-2000€",
       "contributeur": "système"
     },
     "freins_defaillants": {
-      "keywords": ["freins", "pédale molle", "grincement", "couinement", "plaquettes"],
+      "keywords": ["freins", "pédale molle", "grincement", "couinement", "plaquettes", "disques"],
       "titre": "Problèmes de freinage",
       "urgence": "critique",
       "causes": [
@@ -76,20 +91,25 @@
         "Disques voilés",
         "Liquide de frein contaminé",
         "Étriers grippés",
-        "Maître-cylindre défaillant"
+        "Maître-cylindre défaillant",
+        "Durites fissurées",
+        "Servofrein HS",
+        "Répartiteur défectueux"
       ],
       "solutions": [
         "ARRÊT IMMÉDIAT si freinage inefficace",
         "Vérifier l'épaisseur des plaquettes",
         "Contrôler le liquide de frein",
         "Faire purger le circuit",
-        "Remplacer les pièces usées"
+        "Remplacer les pièces usées",
+        "Tester l'assistance",
+        "Contrôler l'ABS"
       ],
       "cout_estime": "80-600€",
       "contributeur": "système"
     },
     "direction_dure": {
-      "keywords": ["direction dure", "volant dur", "direction assistée", "pompe direction"],
+      "keywords": ["direction dure", "volant dur", "direction assistée", "pompe direction", "crémaillère"],
       "titre": "Direction assistée défaillante",
       "urgence": "elevee",
       "causes": [
@@ -97,20 +117,24 @@
         "Courroie cassée ou détendue",
         "Niveau d'huile direction bas",
         "Crémaillère usée",
-        "Capteur défectueux"
+        "Capteur défectueux",
+        "Fuite du circuit",
+        "Filtre bouché"
       ],
       "solutions": [
         "Vérifier le niveau d'huile",
         "Contrôler l'état de la courroie",
         "Écouter les bruits de pompe",
         "Éviter les manœuvres brusques",
-        "Consulter rapidement un garagiste"
+        "Consulter rapidement un garagiste",
+        "Rechercher les fuites",
+        "Purger le circuit"
       ],
       "cout_estime": "150-800€",
       "contributeur": "système"
     },
     "climatisation_defaut": {
-      "keywords": ["climatisation", "clim", "froid", "chaud", "compresseur", "gaz"],
+      "keywords": ["climatisation", "clim", "froid", "chaud", "compresseur", "gaz", "réfrigérant"],
       "titre": "Climatisation défaillante",
       "urgence": "faible",
       "causes": [
@@ -118,17 +142,932 @@
         "Compresseur défaillant",
         "Condenseur encrassé",
         "Filtre habitacle sale",
-        "Fuite dans le circuit"
+        "Fuite dans le circuit",
+        "Embrayage compresseur HS",
+        "Pressostat défectueux",
+        "Évaporateur gelé"
       ],
       "solutions": [
         "Remplacer le filtre habitacle",
         "Nettoyer le condenseur",
         "Faire diagnostiquer les fuites",
         "Recharge du fluide frigorigène",
-        "Contrôler le compresseur"
+        "Contrôler le compresseur",
+        "Vérifier l'embrayage",
+        "Dégivrer l'évaporateur"
       ],
       "cout_estime": "50-400€",
       "contributeur": "système"
+    },
+    "bruits_moteur": {
+      "keywords": ["bruit moteur", "claquement", "sifflement", "ronflement", "grincement moteur", "cognement"],
+      "titre": "Bruits anormaux du moteur",
+      "urgence": "moyenne",
+      "causes": [
+        "Chaîne ou courroie de distribution détendue",
+        "Roulements usés",
+        "Jeu aux soupapes",
+        "Problème de lubrification",
+        "Pistons ou segments usés",
+        "Bielles fatiguées",
+        "Vilebrequin voilé",
+        "Culbuteurs usés"
+      ],
+      "solutions": [
+        "Identifier précisément le bruit",
+        "Vérifier le niveau d'huile",
+        "Contrôler la tension des courroies",
+        "Diagnostic moteur approfondi",
+        "Éviter la sur-sollicitation",
+        "Écouter au stéthoscope",
+        "Test de compression"
+      ],
+      "cout_estime": "100-3000€",
+      "contributeur": "IA"
+    },
+    "vibrations_direction": {
+      "keywords": ["vibrations volant", "tremblement", "oscillation", "volant qui bouge", "shimmy"],
+      "titre": "Vibrations dans la direction",
+      "urgence": "moyenne",
+      "causes": [
+        "Équilibrage des roues défaillant",
+        "Pneus déformés ou usés",
+        "Amortisseurs usés",
+        "Rotules de direction usées",
+        "Disques de frein voilés",
+        "Jantes voilées",
+        "Carrossage incorrect",
+        "Roulements de roue HS"
+      ],
+      "solutions": [
+        "Équilibrer les roues",
+        "Vérifier l'état des pneus",
+        "Contrôler les amortisseurs",
+        "Tester les rotules",
+        "Faire rectifier les disques",
+        "Vérifier les jantes",
+        "Géométrie des roues"
+      ],
+      "cout_estime": "50-500€",
+      "contributeur": "IA"
+    },
+    "consommation_excessive": {
+      "keywords": ["consommation élevée", "surconsommation", "carburant", "essence", "diesel", "économie"],
+      "titre": "Surconsommation de carburant",
+      "urgence": "faible",
+      "causes": [
+        "Filtre à air encrassé",
+        "Injecteurs sales",
+        "Capteurs défaillants",
+        "Conduite agressive",
+        "Pneus sous-gonflés",
+        "Thermostat HS",
+        "Embrayage qui patine",
+        "Frein qui frotte"
+      ],
+      "solutions": [
+        "Remplacer le filtre à air",
+        "Nettoyer les injecteurs",
+        "Vérifier la pression des pneus",
+        "Adapter son style de conduite",
+        "Diagnostic électronique",
+        "Contrôler les freins",
+        "Vérifier l'embrayage"
+      ],
+      "cout_estime": "30-300€",
+      "contributeur": "IA"
+    },
+    "fuite_huile": {
+      "keywords": ["fuite d'huile", "tache huile", "goutte", "joint", "carter", "suintement"],
+      "titre": "Fuite d'huile moteur",
+      "urgence": "moyenne",
+      "causes": [
+        "Joint de carter usé",
+        "Joint de culasse défaillant",
+        "Bouchon de vidange mal serré",
+        "Filtre à huile défectueux",
+        "Joints de distribution usés",
+        "Joint spy défaillant",
+        "Couvre-culasse qui fuit",
+        "Pompe à huile"
+      ],
+      "solutions": [
+        "Localiser précisément la fuite",
+        "Vérifier régulièrement le niveau",
+        "Remplacer les joints défaillants",
+        "Resserrer les éléments desserrés",
+        "Éviter de rouler avec peu d'huile",
+        "Nettoyer et surveiller",
+        "Utiliser un traceur UV"
+      ],
+      "cout_estime": "50-800€",
+      "contributeur": "IA"
+    },
+    "eclairage_defaut": {
+      "keywords": ["phares", "feux", "ampoule", "éclairage", "clignotant", "led", "xenon"],
+      "titre": "Problèmes d'éclairage",
+      "urgence": "elevee",
+      "causes": [
+        "Ampoule grillée",
+        "Fusible défaillant",
+        "Problème de contacteur",
+        "Faisceau électrique endommagé",
+        "Relais défectueux",
+        "Ballast xenon HS",
+        "Phare oxydé",
+        "Masse défaillante"
+      ],
+      "solutions": [
+        "Remplacer l'ampoule défectueuse",
+        "Vérifier les fusibles",
+        "Contrôler les connexions",
+        "Tester le contacteur",
+        "Consulter un électricien auto",
+        "Nettoyer les phares",
+        "Vérifier les masses"
+      ],
+      "cout_estime": "10-200€",
+      "contributeur": "IA"
+    },
+    "transmission_probleme": {
+      "keywords": ["boîte vitesse", "embrayage", "passage vitesse", "claquement boîte", "automatique"],
+      "titre": "Problèmes de transmission",
+      "urgence": "elevee",
+      "causes": [
+        "Embrayage usé",
+        "Huile de boîte dégradée",
+        "Synchroniseurs usés",
+        "Câbles de commande détendus",
+        "Disque d'embrayage patinant",
+        "Convertisseur HS (auto)",
+        "Solénoïdes défaillants",
+        "Butée d'embrayage usée"
+      ],
+      "solutions": [
+        "Vérifier le niveau d'huile boîte",
+        "Ajuster les câbles",
+        "Remplacer l'embrayage",
+        "Vidanger la boîte de vitesses",
+        "Éviter les passages forcés",
+        "Diagnostic électronique",
+        "Purger le circuit hydraulique"
+      ],
+      "cout_estime": "200-2500€",
+      "contributeur": "IA"
+    },
+    "echappement_fume": {
+      "keywords": ["fumée", "échappement", "fumée blanche", "fumée bleue", "fumée noire", "pot"],
+      "titre": "Fumée anormale à l'échappement",
+      "urgence": "moyenne",
+      "causes": [
+        "Joints de culasse défaillants (fumée blanche)",
+        "Consommation d'huile (fumée bleue)",
+        "Mélange riche (fumée noire)",
+        "Liquide de refroidissement dans moteur",
+        "Segments pistons usés",
+        "Turbo qui fuit",
+        "Injecteurs défaillants",
+        "Filtre à particules encrassé"
+      ],
+      "solutions": [
+        "Identifier la couleur de fumée",
+        "Vérifier les niveaux de fluides",
+        "Contrôler la compression",
+        "Diagnostic moteur complet",
+        "Éviter de continuer à rouler",
+        "Test d'étanchéité",
+        "Régénération FAP"
+      ],
+      "cout_estime": "100-3000€",
+      "contributeur": "IA"
+    },
+    "suspension_defaut": {
+      "keywords": ["suspension", "amortisseurs", "rebonds", "tenue route", "confort", "ressorts"],
+      "titre": "Problèmes de suspension",
+      "urgence": "moyenne",
+      "causes": [
+        "Amortisseurs usés",
+        "Ressorts cassés",
+        "Silent-blocs détériorés",
+        "Rotules usées",
+        "Barre stabilisatrice endommagée",
+        "Coupelles d'amortisseurs",
+        "Triangles de suspension",
+        "Suspension pneumatique HS"
+      ],
+      "solutions": [
+        "Test de rebond des amortisseurs",
+        "Vérifier l'état des ressorts",
+        "Contrôler les silent-blocs",
+        "Tester les rotules",
+        "Remplacer les éléments défaillants",
+        "Géométrie après réparation",
+        "Test sur banc"
+      ],
+      "cout_estime": "150-1200€",
+      "contributeur": "IA"
+    },
+    "essuie_glaces_defaut": {
+      "keywords": ["essuie-glaces", "balais", "lave-glace", "pare-brise", "visibilité", "gicleurs"],
+      "titre": "Problèmes d'essuie-glaces",
+      "urgence": "elevee",
+      "causes": [
+        "Balais usés",
+        "Moteur d'essuie-glaces défaillant",
+        "Réservoir lave-glace vide",
+        "Buses bouchées",
+        "Contacteur défectueux",
+        "Tringlerie grippée",
+        "Pompe lave-glace HS",
+        "Fusible grillé"
+      ],
+      "solutions": [
+        "Remplacer les balais",
+        "Faire le plein de lave-glace",
+        "Déboucher les buses",
+        "Vérifier le moteur",
+        "Contrôler les fusibles",
+        "Lubrifier la tringlerie",
+        "Tester la pompe"
+      ],
+      "cout_estime": "15-250€",
+      "contributeur": "IA"
+    },
+    "courroie_casse": {
+      "keywords": ["courroie", "courroie accessoires", "courroie distribution", "grincement courroie", "poulie"],
+      "titre": "Problèmes de courroies",
+      "urgence": "elevee",
+      "causes": [
+        "Courroie usée ou craquelée",
+        "Tension insuffisante",
+        "Poulie défaillante",
+        "Galet tendeur usé",
+        "Désalignement des poulies",
+        "Corps étranger",
+        "Poulie folle grippée",
+        "Vilebrequin oval"
+      ],
+      "solutions": [
+        "Vérifier visuellement les courroies",
+        "Contrôler la tension",
+        "Remplacer si nécessaire",
+        "Vérifier l'alignement",
+        "Arrêt immédiat si cassure",
+        "Changer les galets",
+        "Contrôler toutes les poulies"
+      ],
+      "cout_estime": "50-1500€",
+      "contributeur": "IA"
+    },
+    "batterie_faible": {
+      "keywords": ["batterie", "décharge", "voltage", "alternateur", "démarrage lent", "12v"],
+      "titre": "Problèmes de batterie",
+      "urgence": "elevee",
+      "causes": [
+        "Batterie en fin de vie",
+        "Alternateur défaillant",
+        "Consommation parasite",
+        "Bornes oxydées",
+        "Température extrême",
+        "Régulateur HS",
+        "Courroie alternateur",
+        "Sulfatation des plaques"
+      ],
+      "solutions": [
+        "Tester la tension batterie",
+        "Nettoyer les bornes",
+        "Vérifier l'alternateur",
+        "Rechercher les fuites",
+        "Remplacer si nécessaire",
+        "Test de charge",
+        "Mesurer la consommation"
+      ],
+      "cout_estime": "20-300€",
+      "contributeur": "IA"
+    },
+    "voyant_huile": {
+      "keywords": ["voyant huile", "pression huile", "témoin rouge", "lubrification", "manomètre"],
+      "titre": "Voyant de pression d'huile",
+      "urgence": "critique",
+      "causes": [
+        "Niveau d'huile insuffisant",
+        "Pompe à huile défaillante",
+        "Capteur de pression HS",
+        "Filtre à huile bouché",
+        "Viscosité inadaptée",
+        "Huile dégradée",
+        "Clapet antiretour",
+        "Carter fissuré"
+      ],
+      "solutions": [
+        "ARRÊT IMMÉDIAT du moteur",
+        "Vérifier le niveau d'huile",
+        "Contrôler les fuites",
+        "Ne pas redémarrer",
+        "Appeler un dépanneur",
+        "Tester le capteur",
+        "Vidange complète"
+      ],
+      "cout_estime": "30-2000€",
+      "contributeur": "IA"
+    },
+    "carrosserie_rouille": {
+      "keywords": ["rouille", "corrosion", "carrosserie", "oxydation", "trous", "sel"],
+      "titre": "Problèmes de carrosserie",
+      "urgence": "faible",
+      "causes": [
+        "Exposition au sel routier",
+        "Rayures non traitées",
+        "Humidité persistante",
+        "Âge du véhicule",
+        "Chocs non réparés",
+        "Protection insuffisante",
+        "Evacuation bouchée",
+        "Joints d'étanchéité HS"
+      ],
+      "solutions": [
+        "Traitement antirouille préventif",
+        "Ponçage et peinture",
+        "Protection par cire",
+        "Lavage régulier dessous",
+        "Réparation rapide des impacts",
+        "Déboucher les évacuations",
+        "Remplacer les joints"
+      ],
+      "cout_estime": "50-2000€",
+      "contributeur": "IA"
+    },
+    "airbag_voyant": {
+      "keywords": ["airbag", "srs", "coussin gonflable", "sécurité", "voyant airbag", "prétensionneur"],
+      "titre": "Voyant airbag allumé",
+      "urgence": "elevee",
+      "causes": [
+        "Capteur de choc défaillant",
+        "Problème de câblage",
+        "Siège mal connecté",
+        "Spirale sous volant usée",
+        "Calculateur airbag HS",
+        "Prétensionneur déclenché",
+        "Masse défaillante",
+        "Choc antérieur"
+      ],
+      "solutions": [
+        "Diagnostic électronique",
+        "Vérifier les connexions sièges",
+        "Contrôler les capteurs",
+        "Ne pas ignorer le voyant",
+        "Consulter rapidement",
+        "Effacer les défauts",
+        "Remplacer si nécessaire"
+      ],
+      "cout_estime": "100-800€",
+      "contributeur": "IA"
+    },
+    "abs_defaillant": {
+      "keywords": ["abs", "antiblocage", "voyant abs", "freinage", "capteur roue", "esp"],
+      "titre": "Système ABS défaillant",
+      "urgence": "elevee",
+      "causes": [
+        "Capteur de roue HS",
+        "Couronne dentée cassée",
+        "Calculateur ABS défaillant",
+        "Bloc hydraulique HS",
+        "Câblage endommagé",
+        "Fusible grillé",
+        "Pompe ABS",
+        "Accumulateur défaillant"
+      ],
+      "solutions": [
+        "Diagnostic électronique",
+        "Contrôler les capteurs",
+        "Vérifier les couronnes",
+        "Tester le calculateur",
+        "Purger le circuit",
+        "Remplacer les capteurs",
+        "Réparer le câblage"
+      ],
+      "cout_estime": "150-1200€",
+      "contributeur": "IA"
+    },
+    "turbo_defaillant": {
+      "keywords": ["turbo", "turbocompresseur", "sifflement", "manque puissance", "suralimentation"],
+      "titre": "Turbocompresseur défaillant",
+      "urgence": "moyenne",
+      "causes": [
+        "Roulements turbo usés",
+        "Fuite d'huile turbo",
+        "Wastegate grippée",
+        "Durites percées",
+        "Échangeur encrassé",
+        "Filtre à air sale",
+        "Huile dégradée",
+        "Corps étranger"
+      ],
+      "solutions": [
+        "Contrôler l'huile moteur",
+        "Vérifier les durites",
+        "Nettoyer l'échangeur",
+        "Remplacer le filtre",
+        "Diagnostic pression",
+        "Éviter les sur-régimes",
+        "Laisser refroidir"
+      ],
+      "cout_estime": "300-3000€",
+      "contributeur": "IA"
+    },
+    "dsg_probleme": {
+      "keywords": ["dsg", "double embrayage", "boîte robotisée", "à-coups", "dct"],
+      "titre": "Problèmes boîte DSG/DCT",
+      "urgence": "elevee",
+      "causes": [
+        "Embrayages usés",
+        "Mécatronique défaillante",
+        "Huile dégradée",
+        "Capteurs HS",
+        "Solénoïdes grippées",
+        "Accumulator défaillant",
+        "Refroidissement insuffisant",
+        "Logiciel obsolète"
+      ],
+      "solutions": [
+        "Vidange huile DSG",
+        "Mise à jour logiciel",
+        "Adaptation embrayages",
+        "Diagnostic spécialisé",
+        "Éviter les embouteillages",
+        "Conduite adaptée",
+        "Révision programmée"
+      ],
+      "cout_estime": "200-4000€",
+      "contributeur": "IA"
+    },
+    "injection_diesel": {
+      "keywords": ["injection", "diesel", "common rail", "injecteurs", "pompe hp", "durite"],
+      "titre": "Problèmes injection diesel",
+      "urgence": "moyenne",
+      "causes": [
+        "Injecteurs encrassés",
+        "Pompe HP défaillante",
+        "Capteur pression rail",
+        "Durites HP fissurées",
+        "Carburant de mauvaise qualité",
+        "Filtre à gasoil bouché",
+        "Régulateur pression",
+        "Air dans le circuit"
+      ],
+      "solutions": [
+        "Nettoyer les injecteurs",
+        "Remplacer le filtre",
+        "Purger le circuit",
+        "Test pression rail",
+        "Utiliser de l'additif",
+        "Diagnostic injection",
+        "Réparer les fuites"
+      ],
+      "cout_estime": "150-2500€",
+      "contributeur": "IA"
+    },
+    "fap_encrasse": {
+      "keywords": ["fap", "filtre particules", "régénération", "encrassement", "dpf"],
+      "titre": "Filtre à particules encrassé",
+      "urgence": "moyenne",
+      "causes": [
+        "Trajets trop courts",
+        "Régénération impossible",
+        "Capteurs défaillants",
+        "Huile de mauvaise qualité",
+        "Additif manquant",
+        "Système EGR HS",
+        "Sondes température",
+        "Différentiel pression"
+      ],
+      "solutions": [
+        "Rouler sur autoroute",
+        "Régénération forcée",
+        "Nettoyer les capteurs",
+        "Vidange adaptée",
+        "Ajouter l'additif",
+        "Diagnostic complet",
+        "Nettoyage ou remplacement"
+      ],
+      "cout_estime": "200-2000€",
+      "contributeur": "IA"
+    },
+    "vanne_egr": {
+      "keywords": ["egr", "vanne egr", "recirculation", "encrassement", "colmatage"],
+      "titre": "Vanne EGR défaillante",
+      "urgence": "moyenne",
+      "causes": [
+        "Encrassement par la calamine",
+        "Moteur pas à pas HS",
+        "Durites fissurées",
+        "Capteur position défaillant",
+        "Refroidisseur EGR bouché",
+        "Clapet grippé",
+        "Connecteur corrodé",
+        "Logiciel moteur"
+      ],
+      "solutions": [
+        "Nettoyer la vanne",
+        "Décrasser le circuit",
+        "Remplacer si nécessaire",
+        "Contrôler les durites",
+        "Test du moteur pas à pas",
+        "Mise à jour logiciel",
+        "Additif nettoyant"
+      ],
+      "cout_estime": "100-600€",
+      "contributeur": "IA"
+    },
+    "cache_moteur": {
+      "keywords": ["cache moteur", "protection moteur", "carter", "éclaboussures", "plastique"],
+      "titre": "Cache moteur endommagé",
+      "urgence": "faible",
+      "causes": [
+        "Choc avec obstacle",
+        "Fixations cassées",
+        "Vieillissement plastique",
+        "Montage/démontage",
+        "Vibrations excessives",
+        "Température élevée",
+        "Produits chimiques",
+        "Usure normale"
+      ],
+      "solutions": [
+        "Remplacer les fixations",
+        "Réparer avec colle",
+        "Changer le cache",
+        "Vérifier l'alignement",
+        "Protection anti-chocs",
+        "Nettoyage régulier",
+        "Inspection visuelle"
+      ],
+      "cout_estime": "20-200€",
+      "contributeur": "IA"
+    },
+    "boitier_papillon": {
+      "keywords": ["boîtier papillon", "papillon", "admission", "ralenti irrégulier", "tbs"],
+      "titre": "Boîtier papillon défaillant",
+      "urgence": "moyenne",
+      "causes": [
+        "Encrassement du papillon",
+        "Moteur pas à pas HS",
+        "Capteur position défaillant",
+        "Ressort de rappel cassé",
+        "Axe papillon usé",
+        "Dépôts de carbone",
+        "Câblage défectueux",
+        "Étanchéité HS"
+      ],
+      "solutions": [
+        "Nettoyer le boîtier",
+        "Calibrer le papillon",
+        "Remplacer si nécessaire",
+        "Contrôler l'étanchéité",
+        "Diagnostic électronique",
+        "Réapprendre le ralenti",
+        "Vérifier le câblage"
+      ],
+      "cout_estime": "80-400€",
+      "contributeur": "IA"
+    },
+    "capteur_pmh": {
+      "keywords": ["capteur pmh", "point mort haut", "vilebrequin", "synchronisation", "allumage"],
+      "titre": "Capteur PMH défaillant",
+      "urgence": "critique",
+      "causes": [
+        "Capteur magnétique HS",
+        "Couronne dentée abîmée",
+        "Entrefer incorrect",
+        "Câblage coupé",
+        "Corrosion connecteur",
+        "Vibrations excessives",
+        "Pollution magnétique",
+        "Usure mécanique"
+      ],
+      "solutions": [
+        "Remplacer le capteur",
+        "Contrôler la couronne",
+        "Vérifier l'entrefer",
+        "Nettoyer les connexions",
+        "Test oscilloscope",
+        "Programmer l'ECU",
+        "Vérifier le signal"
+      ],
+      "cout_estime": "80-300€",
+      "contributeur": "IA"
+    },
+    "volant_moteur": {
+      "keywords": ["volant moteur", "bimasse", "vibrations", "claquements", "dmf"],
+      "titre": "Volant moteur bimasse défaillant",
+      "urgence": "elevee",
+      "causes": [
+        "Ressorts internes cassés",
+        "Roulements usés",
+        "Surcharge du moteur",
+        "Embrayage défaillant",
+        "Conduite agressive",
+        "Usure normale",
+        "Déséquilibrage",
+        "Fissures métal"
+      ],
+      "solutions": [
+        "Remplacer le volant",
+        "Changer l'embrayage",
+        "Éviter les sur-régimes",
+        "Conduite souple",
+        "Diagnostic vibrations",
+        "Équilibrage si possible",
+        "Kit complet"
+      ],
+      "cout_estime": "800-2000€",
+      "contributeur": "IA"
+    },
+    "pompe_carburant": {
+      "keywords": ["pompe carburant", "pompe essence", "alimentation", "pression", "jauge"],
+      "titre": "Pompe à carburant défaillante",
+      "urgence": "elevee",
+      "causes": [
+        "Usure mécanique",
+        "Réservoir vide fréquent",
+        "Carburant contaminé",
+        "Filtre bouché",
+        "Relais défaillant",
+        "Alimentation électrique",
+        "Clapet antiretour HS",
+        "Jauge niveau HS"
+      ],
+      "solutions": [
+        "Remplacer la pompe",
+        "Changer le filtre",
+        "Nettoyer le réservoir",
+        "Tester la pression",
+        "Contrôler le relais",
+        "Vérifier l'alimentation",
+        "Ne pas rouler sur réserve"
+      ],
+      "cout_estime": "200-800€",
+      "contributeur": "IA"
+    },
+    "regulateur_vitesse": {
+      "keywords": ["régulateur", "cruise control", "vitesse constante", "acc", "limiteur"],
+      "titre": "Régulateur de vitesse HS",
+      "urgence": "faible",
+      "causes": [
+        "Capteur vitesse HS",
+        "Servo-moteur défaillant",
+        "Câble d'accélérateur",
+        "Contacteur pédale",
+        "Fusible grillé",
+        "Calculateur HS",
+        "Radar ACC sale",
+        "Étalonnage perdu"
+      ],
+      "solutions": [
+        "Diagnostic électronique",
+        "Nettoyer le radar",
+        "Calibrer le système",
+        "Vérifier les capteurs",
+        "Remplacer les fusibles",
+        "Test des contacteurs",
+        "Mise à jour logiciel"
+      ],
+      "cout_estime": "100-800€",
+      "contributeur": "IA"
+    },
+    "moteur_essuie_glace": {
+      "keywords": ["moteur essuie-glace", "mécanisme", "tringlerie", "balayage", "intermittent"],
+      "titre": "Moteur essuie-glace défaillant",
+      "urgence": "elevee",
+      "causes": [
+        "Moteur électrique grillé",
+        "Charbons usés",
+        "Tringlerie grippée",
+        "Bras tordus",
+        "Fusible défaillant",
+        "Relais HS",
+        "Balais bloqués",
+        "Glace gelée"
+      ],
+      "solutions": [
+        "Remplacer le moteur",
+        "Changer les charbons",
+        "Lubrifier la tringlerie",
+        "Redresser les bras",
+        "Contrôler l'alimentation",
+        "Dégivrer le pare-brise",
+        "Vérifier les fusibles"
+      ],
+      "cout_estime": "80-300€",
+      "contributeur": "IA"
+    },
+    "retroviseurs_electriques": {
+      "keywords": ["rétroviseurs", "miroirs", "réglage électrique", "rabattement", "dégivrage"],
+      "titre": "Rétroviseurs électriques HS",
+      "urgence": "faible",
+      "causes": [
+        "Moteurs de réglage grillés",
+        "Fusible défaillant",
+        "Contacteur HS",
+        "Câblage coupé",
+        "Miroir décollé",
+        "Mécanisme grippé",
+        "Gel ou humidité",
+        "Choc extérieur"
+      ],
+      "solutions": [
+        "Remplacer les moteurs",
+        "Vérifier les fusibles",
+        "Tester le contacteur",
+        "Réparer le câblage",
+        "Recoller le miroir",
+        "Lubrifier le mécanisme",
+        "Protéger de l'humidité"
+      ],
+      "cout_estime": "50-400€",
+      "contributeur": "IA"
+    },
+    "leve_vitres_electriques": {
+      "keywords": ["lève-vitres", "vitres électriques", "mécanisme", "moteur", "anti-pincement"],
+      "titre": "Lève-vitres électriques HS",
+      "urgence": "moyenne",
+      "causes": [
+        "Moteur électrique grillé",
+        "Câbles cassés",
+        "Mécanisme grippé",
+        "Fusible défaillant",
+        "Contacteur HS",
+        "Rails sales",
+        "Vitre coincée",
+        "Anti-pincement activé"
+      ],
+      "solutions": [
+        "Remplacer le moteur",
+        "Changer les câbles",
+        "Nettoyer les rails",
+        "Lubrifier le mécanisme",
+        "Réinitialiser l'anti-pincement",
+        "Vérifier l'alimentation",
+        "Ajuster la vitre"
+      ],
+      "cout_estime": "100-500€",
+      "contributeur": "IA"
+    },
+    "serrures_centralisees": {
+      "keywords": ["serrures", "verrouillage centralisé", "télécommande", "actuateurs", "centralisation"],
+      "titre": "Verrouillage centralisé HS",
+      "urgence": "moyenne",
+      "causes": [
+        "Actuateurs de portes HS",
+        "Télécommande déchargée",
+        "Récepteur défaillant",
+        "Fusible grillé",
+        "Câblage endommagé",
+        "Serrure mécanique grippée",
+        "Interférence électrique",
+        "Programmation perdue"
+      ],
+      "solutions": [
+        "Remplacer les actuateurs",
+        "Changer la pile télécommande",
+        "Reprogrammer les clés",
+        "Lubrifier les serrures",
+        "Vérifier les fusibles",
+        "Réparer le câblage",
+        "Tester le récepteur"
+      ],
+      "cout_estime": "80-600€",
+      "contributeur": "IA"
+    },
+    "ceintures_securite": {
+      "keywords": ["ceintures", "sécurité", "enrouleur", "prétensionneur", "blocage"],
+      "titre": "Problèmes ceintures de sécurité",
+      "urgence": "critique",
+      "causes": [
+        "Enrouleur bloqué",
+        "Sangle effilochée",
+        "Prétensionneur déclenché",
+        "Boucle défaillante",
+        "Ressort cassé",
+        "Mécanisme sale",
+        "Capteur de choc activé",
+        "Usure normale"
+      ],
+      "solutions": [
+        "Nettoyer le mécanisme",
+        "Remplacer la ceinture",
+        "Lubrifier l'enrouleur",
+        "Changer la boucle",
+        "Réinitialiser le système",
+        "Vérification sécurité",
+        "Remplacement obligatoire"
+      ],
+      "cout_estime": "100-400€",
+      "contributeur": "IA"
+    },
+    "systeme_audio": {
+      "keywords": ["autoradio", "haut-parleurs", "son", "audio", "bluetooth", "usb"],
+      "titre": "Système audio défaillant",
+      "urgence": "faible",
+      "causes": [
+        "Autoradio en panne",
+        "Haut-parleurs grillés",
+        "Antenne défectueuse",
+        "Câblage coupé",
+        "Fusible défaillant",
+        "Amplificateur HS",
+        "Problème Bluetooth",
+        "Connecteurs oxydés"
+      ],
+      "solutions": [
+        "Tester l'autoradio",
+        "Remplacer les HP",
+        "Vérifier l'antenne",
+        "Contrôler le câblage",
+        "Changer les fusibles",
+        "Nettoyer les connecteurs",
+        "Réinitialiser le système"
+      ],
+      "cout_estime": "50-800€",
+      "contributeur": "IA"
+    },
+    "compteurs_defaillants": {
+      "keywords": ["compteurs", "tableau bord", "aiguilles", "affichage", "lcd", "led"],
+      "titre": "Compteurs du tableau de bord HS",
+      "urgence": "moyenne",
+      "causes": [
+        "Moteurs pas à pas HS",
+        "Écran LCD défaillant",
+        "Soudures froides",
+        "Condensateurs gonflés",
+        "Éclairage grillé",
+        "Connecteur corrodé",
+        "Choc thermique",
+        "Usure électronique"
+      ],
+      "solutions": [
+        "Réparation électronique",
+        "Remplacer les moteurs",
+        "Changer l'écran",
+        "Ressouder les pistes",
+        "Remplacer l'éclairage",
+        "Nettoyer les connecteurs",
+        "Remplacement complet"
+      ],
+      "cout_estime": "150-800€",
+      "contributeur": "IA"
+    },
+    "antivol_defaillant": {
+      "keywords": ["antivol", "immobilisateur", "transpondeur", "clé", "démarrage bloqué"],
+      "titre": "Système antivol défaillant",
+      "urgence": "elevee",
+      "causes": [
+        "Puce transpondeur HS",
+        "Lecteur antenne défaillant",
+        "Calculateur antivol HS",
+        "Clé non reconnue",
+        "Interférence électrique",
+        "Batterie clé faible",
+        "Programmation perdue",
+        "Contacteur défectueux"
+      ],
+      "solutions": [
+        "Reprogrammer les clés",
+        "Changer la pile clé",
+        "Remplacer l'antenne",
+        "Diagnostic spécialisé",
+        "Réinitialiser le système",
+        "Faire une clé de secours",
+        "Vérifier le contacteur"
+      ],
+      "cout_estime": "100-600€",
+      "contributeur": "IA"
+    },
+    "climatisation_odeur": {
+      "keywords": ["odeur climatisation", "moisissure", "champignons", "filtre habitacle", "évaporateur"],
+      "titre": "Odeurs de climatisation",
+      "urgence": "faible",
+      "causes": [
+        "Filtre habitacle sale",
+        "Évaporateur moisi",
+        "Condensats stagnants",
+        "Bactéries développées",
+        "Système mal entretenu",
+        "Humidité excessive",
+        "Évacuation bouchée",
+        "Produit désinfectant absent"
+      ],
+      "solutions": [
+        "Remplacer le filtre",
+        "Désinfecter l'évaporateur",
+        "Nettoyer les conduits",
+        "Déboucher l'évacuation",
+        "Utiliser un désinfectant",
+        "Faire sécher le système",
+        "Entretien préventif"
+      ],
+      "cout_estime": "30-200€",
+      "contributeur": "IA"
     }
   }
 }
