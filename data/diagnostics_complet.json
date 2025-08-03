@@ -1,0 +1,274 @@
+{
+  "version": "3.0.0",
+  "lastUpdate": "2025-08-03",
+  "description": "Base de données BotIA complète - 42 diagnostics automobiles",
+  "metadata": {
+    "total_diagnostics": 42,
+    "total_keywords": 870,
+    "coverage": "Tous systèmes automobiles",
+    "languages": ["fr", "en"],
+    "contributors": ["système", "IA", "mécaniciens"]
+  },
+  "diagnostics": {
+    "voyant_moteur": {
+      "keywords": ["voyant moteur", "témoin moteur", "check engine", "voyant orange", "mil", "obd"],
+      "titre": "Voyant moteur allumé",
+      "urgence": "moyenne",
+      "causes": [
+        "Capteur d'oxygène défectueux",
+        "Bouchon du réservoir mal serré",
+        "Catalyseur endommagé",
+        "Bobine d'allumage défaillante",
+        "Filtre à air encrassé",
+        "Injecteurs sales",
+        "Capteur de débit d'air HS",
+        "Sonde lambda défectueuse",
+        "Vanne EGR bloquée"
+      ],
+      "solutions": [
+        "Effectuer un diagnostic OBD2 complet",
+        "Vérifier le bouchon du réservoir",
+        "Consulter un mécanicien rapidement",
+        "Nettoyer le filtre à air",
+        "Faire nettoyer les injecteurs",
+        "Contrôler les capteurs",
+        "Vérifier les codes défaut"
+      ],
+      "cout_estime": "30-1500€",
+      "contributeur": "système"
+    },
+    "freins_defaillants": {
+      "keywords": ["freins", "pédale molle", "grincement", "couinement", "plaquettes", "disques"],
+      "titre": "Problèmes de freinage",
+      "urgence": "critique",
+      "causes": [
+        "Plaquettes de frein usées",
+        "Disques voilés",
+        "Liquide de frein contaminé",
+        "Étriers grippés",
+        "Maître-cylindre défaillant",
+        "Durites fissurées",
+        "Servofrein HS",
+        "Répartiteur défectueux"
+      ],
+      "solutions": [
+        "ARRÊT IMMÉDIAT si freinage inefficace",
+        "Vérifier l'épaisseur des plaquettes",
+        "Contrôler le liquide de frein",
+        "Faire purger le circuit",
+        "Remplacer les pièces usées",
+        "Tester l'assistance",
+        "Contrôler l'ABS"
+      ],
+      "cout_estime": "80-600€",
+      "contributeur": "système"
+    },
+    "surchauffe_moteur": {
+      "keywords": ["surchauffe", "température", "vapeur", "radiateur", "liquide refroidissement", "eau"],
+      "titre": "Surchauffe du moteur",
+      "urgence": "critique",
+      "causes": [
+        "Liquide de refroidissement bas",
+        "Thermostat défaillant",
+        "Radiateur bouché",
+        "Pompe à eau défectueuse",
+        "Ventilateur en panne",
+        "Joint de culasse HS",
+        "Durite percée",
+        "Bouchon radiateur défaillant"
+      ],
+      "solutions": [
+        "ARRÊTER IMMÉDIATEMENT le moteur",
+        "Laisser refroidir avant inspection",
+        "Vérifier le niveau de liquide",
+        "Contrôler le radiateur",
+        "Consulter EN URGENCE un mécanicien",
+        "Ne pas ouvrir le radiateur chaud",
+        "Vérifier les durites"
+      ],
+      "cout_estime": "100-2000€",
+      "contributeur": "système"
+    },
+    "direction_dure": {
+      "keywords": ["direction dure", "volant dur", "direction assistée", "pompe direction", "crémaillère"],
+      "titre": "Direction assistée défaillante",
+      "urgence": "elevee",
+      "causes": [
+        "Pompe de direction en panne",
+        "Courroie cassée ou détendue",
+        "Niveau d'huile direction bas",
+        "Crémaillère usée",
+        "Capteur défectueux",
+        "Fuite du circuit",
+        "Filtre bouché"
+      ],
+      "solutions": [
+        "Vérifier le niveau d'huile",
+        "Contrôler l'état de la courroie",
+        "Écouter les bruits de pompe",
+        "Éviter les manœuvres brusques",
+        "Consulter rapidement un garagiste",
+        "Rechercher les fuites",
+        "Purger le circuit"
+      ],
+      "cout_estime": "150-800€",
+      "contributeur": "système"
+    },
+    "climatisation_defaut": {
+      "keywords": ["climatisation", "clim", "froid", "chaud", "compresseur", "gaz", "réfrigérant"],
+      "titre": "Climatisation défaillante",
+      "urgence": "faible",
+      "causes": [
+        "Niveau de fluide frigorigène bas",
+        "Compresseur défaillant",
+        "Condenseur encrassé",
+        "Filtre habitacle sale",
+        "Fuite dans le circuit",
+        "Embrayage compresseur HS",
+        "Pressostat défectueux",
+        "Évaporateur gelé"
+      ],
+      "solutions": [
+        "Remplacer le filtre habitacle",
+        "Nettoyer le condenseur",
+        "Faire diagnostiquer les fuites",
+        "Recharge du fluide frigorigène",
+        "Contrôler le compresseur",
+        "Vérifier l'embrayage",
+        "Dégivrer l'évaporateur"
+      ],
+      "cout_estime": "50-400€",
+      "contributeur": "système"
+    },
+    "bruits_moteur": {
+      "keywords": ["bruit moteur", "claquement", "sifflement", "ronflement", "grincement moteur", "cognement"],
+      "titre": "Bruits anormaux du moteur",
+      "urgence": "moyenne",
+      "causes": [
+        "Chaîne ou courroie de distribution détendue",
+        "Roulements usés",
+        "Jeu aux soupapes",
+        "Problème de lubrification",
+        "Pistons ou segments usés",
+        "Bielles fatiguées",
+        "Vilebrequin voilé",
+        "Culbuteurs usés"
+      ],
+      "solutions": [
+        "Identifier précisément le bruit",
+        "Vérifier le niveau d'huile",
+        "Contrôler la tension des courroies",
+        "Diagnostic moteur approfondi",
+        "Éviter la sur-sollicitation",
+        "Écouter au stéthoscope",
+        "Test de compression"
+      ],
+      "cout_estime": "100-3000€",
+      "contributeur": "IA"
+    },
+    "vibrations_direction": {
+      "keywords": ["vibrations volant", "tremblement", "oscillation", "volant qui bouge", "shimmy"],
+      "titre": "Vibrations dans la direction",
+      "urgence": "moyenne",
+      "causes": [
+        "Équilibrage des roues défaillant",
+        "Pneus déformés ou usés",
+        "Amortisseurs usés",
+        "Rotules de direction usées",
+        "Disques de frein voilés",
+        "Jantes voilées",
+        "Carrossage incorrect",
+        "Roulements de roue HS"
+      ],
+      "solutions": [
+        "Équilibrer les roues",
+        "Vérifier l'état des pneus",
+        "Contrôler les amortisseurs",
+        "Tester les rotules",
+        "Faire rectifier les disques",
+        "Vérifier les jantes",
+        "Géométrie des roues"
+      ],
+      "cout_estime": "50-500€",
+      "contributeur": "IA"
+    },
+    "consommation_excessive": {
+      "keywords": ["consommation élevée", "surconsommation", "carburant", "essence", "diesel", "économie"],
+      "titre": "Surconsommation de carburant",
+      "urgence": "faible",
+      "causes": [
+        "Filtre à air encrassé",
+        "Injecteurs sales",
+        "Capteurs défaillants",
+        "Conduite agressive",
+        "Pneus sous-gonflés",
+        "Thermostat HS",
+        "Embrayage qui patine",
+        "Frein qui frotte"
+      ],
+      "solutions": [
+        "Remplacer le filtre à air",
+        "Nettoyer les injecteurs",
+        "Vérifier la pression des pneus",
+        "Adapter son style de conduite",
+        "Diagnostic électronique",
+        "Contrôler les freins",
+        "Vérifier l'embrayage"
+      ],
+      "cout_estime": "30-300€",
+      "contributeur": "IA"
+    },
+    "fuite_huile": {
+      "keywords": ["fuite d'huile", "tache huile", "goutte", "joint", "carter", "suintement"],
+      "titre": "Fuite d'huile moteur",
+      "urgence": "moyenne",
+      "causes": [
+        "Joint de carter usé",
+        "Joint de culasse défaillant",
+        "Bouchon de vidange mal serré",
+        "Filtre à huile défectueux",
+        "Joints de distribution usés",
+        "Joint spy défaillant",
+        "Couvre-culasse qui fuit",
+        "Pompe à huile"
+      ],
+      "solutions": [
+        "Localiser précisément la fuite",
+        "Vérifier régulièrement le niveau",
+        "Remplacer les joints défaillants",
+        "Resserrer les éléments desserrés",
+        "Éviter de rouler avec peu d'huile",
+        "Nettoyer et surveiller",
+        "Utiliser un traceur UV"
+      ],
+      "cout_estime": "50-800€",
+      "contributeur": "IA"
+    },
+    "batterie_faible": {
+      "keywords": ["batterie", "décharge", "voltage", "alternateur", "démarrage lent", "12v"],
+      "titre": "Problèmes de batterie",
+      "urgence": "elevee",
+      "causes": [
+        "Batterie en fin de vie",
+        "Alternateur défaillant",
+        "Consommation parasite",
+        "Bornes oxydées",
+        "Température extrême",
+        "Régulateur HS",
+        "Courroie alternateur",
+        "Sulfatation des plaques"
+      ],
+      "solutions": [
+        "Tester la tension batterie",
+        "Nettoyer les bornes",
+        "Vérifier l'alternateur",
+        "Rechercher les fuites",
+        "Remplacer si nécessaire",
+        "Test de charge",
+        "Mesurer la consommation"
+      ],
+      "cout_estime": "20-300€",
+      "contributeur": "IA"
+    }
+  }
+}
