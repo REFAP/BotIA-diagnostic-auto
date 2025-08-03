@@ -1,0 +1,26 @@
+# BotIA - Diagnostic Automobile - Dépendances Python
+# Installation: pip install -r requirements.txt
+
+# Core dependencies
+jsonschema>=4.19.0          # Validation du schéma JSON
+difflib                     # Algorithmes de similarité (inclus dans Python)
+
+# API dependencies (optionnel)
+fastapi>=0.104.0           # Framework API REST moderne
+uvicorn>=0.24.0            # Serveur ASGI pour FastAPI
+pydantic>=2.5.0            # Validation des données
+python-multipart>=0.0.6    # Support des formulaires multipart
+
+# Development dependencies (optionnel)
+pytest>=7.4.0              # Framework de tests
+pytest-asyncio>=0.21.0     # Tests asynchrones
+black>=23.7.0              # Formatage de code
+flake8>=6.0.0              # Linting de code
+
+# Utilities
+aiofiles>=23.2.1           # Opérations fichiers asynchrones
+python-dotenv>=1.0.0       # Variables d'environnement depuis .env
+
+# Data processing (optionnel)
+pandas>=2.1.0              # Manipulation de données (si needed)
+numpy>=1.24.0              # Calculs numériques (si needed)
